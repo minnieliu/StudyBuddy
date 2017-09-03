@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "StudyBuddy",
+  "description": "This extension will block distracting sites.",
+  "version": "1.0",
+  "icons": {
+    "16" : "icon16.png",
+    "48": "icon.png",
+    "128": "icon128.png"},
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions":["webRequest","webRequestBlocking","tabs","storage","https://*/*","http://*/*"],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "options_ui": {
+    "page": "options.html"
+  }
+}
